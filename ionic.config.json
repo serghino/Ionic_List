@@ -1,5 +1,7 @@
 {
   "name": "kanbanApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

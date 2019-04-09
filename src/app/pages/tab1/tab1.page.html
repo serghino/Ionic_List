@@ -1,0 +1,23 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Pending
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <app-lists [tabsNumber]="tab"></app-lists>
+      <!-- fab placed to the (vertical) center and end -->
+     <!-- fab placed in the center of the content with a list on each side -->
+     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button color="tertiary" (click)="addList()">
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="start">
+          <!--<ion-fab-button><ion-icon name="logo-vimeo"></ion-icon></ion-fab-button>
+          <ion-fab-button><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+          <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>-->
+        </ion-fab-list>
+      </ion-fab>
+</ion-content>
